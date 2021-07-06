@@ -69,7 +69,7 @@ void game(classifica* head){
     inizializza_mappa(griglia,16,19);
     do{
         RiempiCaselle(griglia);
-        entity player = SpawnEntity(griglia,(rand() % (RowCount(griglia) - 2)) + 2,(rand() % (ColCount(griglia) - 2)) + 2,1,3,15);
+        entity player = SpawnEntity(griglia,(rand() % (RowCount(griglia) - 2)) + 2,(rand() % (ColCount(griglia) - 2)) + 2,1,3,25);
         SpawnEnemies(griglia,enslots,player,3);
         printf("\n\n\t Premi un qualsiasi tasto per iniziare");
         while ( getchar() != '\n' );
